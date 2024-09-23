@@ -85,11 +85,11 @@ The following table shows the security metrics collected from the **insecure env
 
 | Metric                     | Count |
 |-----------------------------|-------|
-| **SecurityEvent** (Windows)  | 7671  |
-| **Syslog** (Linux)           | 833   |
-| **SecurityAlert**            | 4     |
-| **SecurityIncident**         | 59    |
-| **AzureNetworkAnalytics_CL** | 620   |
+| **SecurityEvent** (Windows)  | 69444  |
+| **Syslog** (Linux)           | 3320   |
+| **SecurityAlert**            | 172     |
+| **SecurityIncident**         | 171    |
+| **AzureNetworkAnalytics_CL** | 678   |
 
 ---
 
@@ -98,11 +98,25 @@ After applying security controls, the number of security events and incidents de
 
 | Metric                     | Count |
 |-----------------------------|-------|
-| **SecurityEvent** (Windows)  | 3894  |
-| **Syslog** (Linux)           | 6     |
+| **SecurityEvent** (Windows)  | 18208  |
+| **Syslog** (Linux)           | 1     |
 | **SecurityAlert**            | 0     |
 | **SecurityIncident**         | 0     |
 | **AzureNetworkAnalytics_CL** | 0     |
+
+---
+
+## Metrics Before and After Hardening
+
+The following table shows the metrics we measured in our insecure environment for 24 hours and after security controls were applied for another 24 hours, along with the percentage change:
+
+| Metric                     | Before Hardening | After Hardening | Percentage Change |
+|-----------------------------|------------------|-----------------|-------------------|
+| **SecurityEvent** (Windows)  | 69,444           | 18,208          | -73.8%            |
+| **Syslog** (Linux)           | 3,320            | 1               | -99.97%           |
+| **SecurityAlert**            | 172              | 0               | -100%             |
+| **SecurityIncident**         | 171              | 0               | -100%             |
+| **AzureNetworkAnalytics_CL** | 678              | 0               | -100%             |
 
 ---
 
